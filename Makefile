@@ -17,6 +17,7 @@ options:
 
 patch:
 	patch -p1 < diff/font.diff
+	patch -p1 < diff/st-dracula-0.8.5.diff
 
 config.h:
 	cp config.def.h config.h
