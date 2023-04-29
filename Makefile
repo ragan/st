@@ -15,6 +15,9 @@ options:
 	@echo "LDFLAGS = $(STLDFLAGS)"
 	@echo "CC      = $(CC)"
 
+patch:
+	patch -p1 < diff/font.diff
+
 config.h:
 	cp config.def.h config.h
 
